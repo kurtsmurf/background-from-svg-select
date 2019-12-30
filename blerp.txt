@@ -1,0 +1,3 @@
+I'm a professional QA Engineer at Qualitest in Greensboro, NC - which means I use Java, TestNG, Maven and Jenkins to design, build and deploy automated tests for enterprise web services.
+
+But I much prefer making dumb toys on the internet! Here's a selection of them.
