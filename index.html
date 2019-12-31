@@ -32,12 +32,21 @@
         
         header>h1 {
             margin: 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 12vw;
+            z-index: -1;
         }
         
         .projects {
             display: flex;
             flex-wrap: nowrap;
             overflow-x: auto;
+        }
+        
+        .projects::-webkit-scrollbar {
+            display: none;
         }
         
         .project {
@@ -125,11 +134,11 @@
             </div>
         </section>
     </main>
-    <footer>
+    <!-- <footer>
         <div class="signature">
             Made by Chris Smith
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
