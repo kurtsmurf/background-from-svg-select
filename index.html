@@ -19,13 +19,12 @@
             background-position-x: -5vw;
             background-position-y: -5vw;
         }
-        
-        header,
+        /* header,
         main {
             max-width: 800px;
             margin: auto;
             padding: 2rem 2rem 0rem 2rem;
-        }
+        } */
         
         footer {
             padding: 2rem;
@@ -35,13 +34,29 @@
             margin: 0;
         }
         
+        .projects {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+        
         .project {
+            flex: 0 0 auto;
+            width: 90vw;
+            max-width: 20rem;
+            margin-left: 1rem;
             background: #FFFFFFAA;
             padding: 0rem;
             margin-bottom: 2rem;
             border: gray dotted;
             display: flex;
             align-items: flex-start;
+            flex-direction: column-reverse;
+        }
+        
+        .project-image {
+            width: 100%;
+            height: auto;
         }
         
         .project-title {
@@ -59,21 +74,14 @@
         }
         
         @media only screen and (max-width: 600px) {
-            header,
+            /* header,
             main {
                 max-width: 800px;
                 margin: auto;
                 padding: 1rem 1rem 0rem 1rem;
-            }
+            } */
             footer {
                 padding: 1rem;
-            }
-            .project {
-                flex-direction: column-reverse;
-            }
-            .project-image {
-                width: 100%;
-                height: auto;
             }
         }
     </style>
@@ -84,36 +92,38 @@
         <h1>CHRIS SMITH</h1>
     </header>
     <main>
-        <div class="project">
-            <div class="project-text">
-                <h2 class="project-title">melo-type</h2>
-                <p><a href="https://kurtsmurf.github.io/melo-type/">Melo-type</a> is a text-based, <a href="https://en.wikipedia.org/wiki/Music_sequencer#Step_sequencers">melodic step sequencer</a> built using the Web Audio API. </p>
-                <p>This was my first attempt at synchronizing musical events with CSS animations. I had lots of fun writing the custom step scheduler (based on <a href="https://www.html5rocks.com/en/tutorials/audio/scheduling/">this article</a>).</p>
-                <a href="https://github.com/kurtsmurf/melo-type">Github</a>
-                <a href="https://glitch.com/~melo-type">Glitch</a>
+        <section class="projects">
+            <div class="project">
+                <div class="project-text">
+                    <h2 class="project-title">melo-type</h2>
+                    <p><a href="https://kurtsmurf.github.io/melo-type/">Melo-type</a> is a text-based, <a href="https://en.wikipedia.org/wiki/Music_sequencer#Step_sequencers">melodic step sequencer</a> built using the Web Audio API. </p>
+                    <p>This was my first attempt at synchronizing musical events with CSS animations. I had lots of fun writing the custom step scheduler (based on <a href="https://www.html5rocks.com/en/tutorials/audio/scheduling/">this article</a>).</p>
+                    <a href="https://github.com/kurtsmurf/melo-type">Github</a>
+                    <a href="https://glitch.com/~melo-type">Glitch</a>
+                </div>
+                <img class="project-image" src="assets/gif/melo-type.gif" alt="animated gif of melo-type website">
             </div>
-            <img class="project-image" src="assets/gif/melo-type.gif" alt="animated gif of melo-type website">
-        </div>
-        <div class="project">
-            <div class="project-text">
-                <h2 class="project-title">qwerbord</h2>
-                <p><a href="https://kurtsmurf.github.io/melo-type/">Melo-type</a> is a text-based, <a href="https://en.wikipedia.org/wiki/Music_sequencer#Step_sequencers">melodic step sequencer</a> built using the Web Audio API. </p>
-                <p>This was my first attempt at synchronizing musical events with CSS animations. I had lots of fun writing the custom step scheduler (based on <a href="https://www.html5rocks.com/en/tutorials/audio/scheduling/">this article</a>).</p>
-                <a href="https://github.com/kurtsmurf/melo-type">Github</a>
-                <a href="https://glitch.com/~melo-type">Glitch</a>
+            <div class="project">
+                <div class="project-text">
+                    <h2 class="project-title">qwerbord</h2>
+                    <p><a href="https://kurtsmurf.github.io/melo-type/">Melo-type</a> is a text-based, <a href="https://en.wikipedia.org/wiki/Music_sequencer#Step_sequencers">melodic step sequencer</a> built using the Web Audio API. </p>
+                    <p>This was my first attempt at synchronizing musical events with CSS animations. I had lots of fun writing the custom step scheduler (based on <a href="https://www.html5rocks.com/en/tutorials/audio/scheduling/">this article</a>).</p>
+                    <a href="https://github.com/kurtsmurf/melo-type">Github</a>
+                    <a href="https://glitch.com/~melo-type">Glitch</a>
+                </div>
+                <img class="project-image" src="assets/gif/qwerbord.gif" alt="animated gif of qwerbord website">
             </div>
-            <img class="project-image" src="assets/gif/qwerbord.gif" alt="animated gif of qwerbord website">
-        </div>
-        <div class="project">
-            <div class="project-text">
-                <h2 class="project-title">bertz_by_kurt</h2>
-                <p><a href="https://kurtsmurf.github.io/melo-type/">Melo-type</a> is a text-based, <a href="https://en.wikipedia.org/wiki/Music_sequencer#Step_sequencers">melodic step sequencer</a> built using the Web Audio API. </p>
-                <p>This was my first attempt at synchronizing musical events with CSS animations. I had lots of fun writing the custom step scheduler (based on <a href="https://www.html5rocks.com/en/tutorials/audio/scheduling/">this article</a>).</p>
-                <a href="https://github.com/kurtsmurf/melo-type">Github</a>
-                <a href="https://glitch.com/~melo-type">Glitch</a>
+            <div class="project">
+                <div class="project-text">
+                    <h2 class="project-title">bertz_by_kurt</h2>
+                    <p><a href="https://kurtsmurf.github.io/melo-type/">Melo-type</a> is a text-based, <a href="https://en.wikipedia.org/wiki/Music_sequencer#Step_sequencers">melodic step sequencer</a> built using the Web Audio API. </p>
+                    <p>This was my first attempt at synchronizing musical events with CSS animations. I had lots of fun writing the custom step scheduler (based on <a href="https://www.html5rocks.com/en/tutorials/audio/scheduling/">this article</a>).</p>
+                    <a href="https://github.com/kurtsmurf/melo-type">Github</a>
+                    <a href="https://glitch.com/~melo-type">Glitch</a>
+                </div>
+                <img class="project-image" src="assets/gif/bertz-by-kurt.gif" alt="animated gif of melo-type website">
             </div>
-            <img class="project-image" src="assets/gif/bertz-by-kurt.gif" alt="animated gif of melo-type website">
-        </div>
+        </section>
     </main>
     <footer>
         <div class="signature">
