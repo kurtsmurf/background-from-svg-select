@@ -13,18 +13,22 @@
         
         body {
             margin: 0;
-            max-width: 800px;
             min-height: 100vh;
-            margin: auto;
-            padding: 2rem 2rem;
             background: whitesmoke url("assets/svg/path.svg");
             background-size: 120vw auto;
             background-position-x: -5vw;
             background-position-y: -5vw;
         }
         
-        header {
-            margin-bottom: 1rem;
+        header,
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem 2rem 0rem 2rem;
+        }
+        
+        footer {
+            padding: 2rem;
         }
         
         header>h1 {
@@ -48,8 +52,20 @@
             padding: 1rem;
         }
         
+        footer {
+            background: #FFFFFFAA;
+            color: gray;
+            text-align: center;
+        }
+        
         @media only screen and (max-width: 600px) {
-            body {
+            header,
+            main {
+                max-width: 800px;
+                margin: auto;
+                padding: 1rem 1rem 0rem 1rem;
+            }
+            footer {
                 padding: 1rem;
             }
             .project {
@@ -99,6 +115,11 @@
             <img class="project-image" src="assets/gif/bertz-by-kurt.gif" alt="animated gif of melo-type website">
         </div>
     </main>
+    <footer>
+        <div class="signature">
+            Made by Chris Smith
+        </div>
+    </footer>
 </body>
 
 </html>
