@@ -40,7 +40,7 @@
         .transparent-card {
             background: #FFFFFFAA;
             border: gray dotted;
-            margin: 1rem;
+            margin-bottom: 1rem;
         }
         
 
@@ -85,25 +85,37 @@
             margin-top: auto;
         }
         
-        @media only screen and (min-width: 500px) {
+        @media only screen and (min-width: 500px) and (min-height: 600px) {
+            header {
+                height: 0;
+                padding: 0;
+                margin: 0;
+            }
             header>h1 {
                 line-height: unset;
                 margin: unset;
                 position: absolute;
                 bottom: 0rem;
                 right: 0;
-                font-size: 5rem;
+                font-size: 14vw;
                 z-index: -1;
             }
 
             main {
-                height: 100%;
+                margin: 0;
+                box-sizing: border-box;
+                height: 100vh;
                 display: flex;
-                flex-flow: wrap;
-                /* justify-content: space-around; */
-                justify-content: space-around;
-                align-items: unset;
+                align-items: flex-start;
+                flex-wrap: nowrap;
+                overflow-x: auto;
             }
+
+            .transparent-card {
+                flex: 0 0 auto;
+                margin: 1rem;
+            }
+        
 
             .profile {
                 width: 22rem;
@@ -135,11 +147,9 @@
     </header>
     <main>
         <div class="profile transparent-card">
+            <p class="profile-text">Hi! I'm Chris, and this is roughly what I look like!</p>
             <img class="profile-image" src="assets/png/self-portrait-square.png" alt="Pencil drawing on lined paper of myself looking crazy.">
-            <div class="profile-text">
-                <p>I'm Chris Smith, and this is roughly how I look!</p>
-                <p>Please take a moment to peruse these websites I've lovingly crafted!</p>
-            </div>
+            <p class="profile-text">Please take a moment to peruse these websites I've lovingly crafted!</p>
         </div>
         <div class="project transparent-card">
             <img class="project-image" src="assets/gif/melo-type.gif" alt="animated gif of melo-type website">
