@@ -36,12 +36,30 @@
             margin: 0;
             line-height: 1.8rem;
         }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            width: 90%;
+        }
+
+        .profile-text {
+            font-size: 1.2rem;
+        }
+
+        .transparent-card {
+            background: #FFFFFFAA;
+            border: gray dotted;
+        }
         
         .project {
-            background: #FFFFFFAA;
             padding: 0rem;
             margin-bottom: 1rem;
-            border: gray dotted;
         }
         
         .project-image {
@@ -65,6 +83,22 @@
         }
         
         @media only screen and (min-width: 500px) {
+            .profile {
+                text-align: left;
+                display: flex;
+                align-items: flex-start;
+                width: 25rem;
+            }
+
+            .profile-image {
+                width: 12rem;
+            }
+
+            .profile-text {
+                margin: 0;
+                margin-left: 1rem;
+            }
+
             .project {
                 width: 18rem;
                 display: inline-block;
@@ -79,8 +113,17 @@
         <h1>CHRIS SMITH</h1>
     </header>
     <main>
+        <section>
+            <div class="profile transparent-card">
+                <img class="profile-image" src="assets/png/self-portrait-square.png" alt="Pencil drawing on lined paper of myself looking crazy.">
+                <div class="profile-text">
+                    <p>I'm Chris Smith, and this is roughly how I look!</p>
+                    <p>Please take a moment to peruse these toy websites I've lovingly crafted using the Web Audio API!</p>
+                </div>
+            </div>
+        </section>
         <section class="projects">
-            <div class="project">
+            <div class="project transparent-card">
                 <img class="project-image" src="assets/gif/melo-type.gif" alt="animated gif of melo-type website">
                 <div class="project-text">
                     <h2 class="project-title">melo-type</h2>
@@ -90,7 +133,7 @@
                     <a href="https://glitch.com/~melo-type">Glitch</a>
                 </div>
             </div>
-            <div class="project">
+            <div class="project transparent-card">
                 <img class="project-image" src="assets/gif/qwerbord.gif" alt="animated gif of qwerbord website">
                 <div class="project-text">
                     <h2 class="project-title">qwerbord</h2>
@@ -100,7 +143,7 @@
                     <a href="https://glitch.com/~melo-type">Glitch</a>
                 </div>
             </div>
-            <div class="project">
+            <div class="project transparent-card">
                 <img class="project-image" src="assets/gif/bertz-by-kurt.gif" alt="animated gif of melo-type website">
                 <div class="project-text">
                     <h2 class="project-title">bertz_by_kurt</h2>
