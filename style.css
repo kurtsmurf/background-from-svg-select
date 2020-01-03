@@ -51,7 +51,7 @@ main {
     margin-top: 0;
 }
 
-.project-title a{
+.project-title a {
     text-decoration: none;
     color: black;
 }
@@ -62,4 +62,50 @@ main {
 
 .project-text {
     padding: 1rem;
+}
+
+@media only screen and (min-width: 550px) {
+    body {
+        display: flex;
+        padding: 2rem;
+    }
+
+    header {
+        width: 12rem;
+    }
+
+    .portrait {
+        width: 100%;
+        margin: 0;
+    }
+
+    .header-text {
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        text-align: right;
+    }
+
+    .my-name {
+        display: inline;
+        font-size: 7rem;
+    }
+
+    .headline {
+        margin: 0;
+        text-align: right;
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    main {
+        margin-left: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .project {
+        margin-right: 1rem;
+        width: 20rem;
+    }
 }
