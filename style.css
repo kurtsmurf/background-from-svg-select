@@ -5,4 +5,52 @@ body {
     background-position-x: -5vw;
     background-position-y: -5vw;
     margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.portrait {
+    border-radius: 50%;
+    width: 80vw;
+    margin-top: 9vw;
+    margin-bottom: 2vw;
+}
+
+.my-name {
+    font-size: 12.25vw;
+    margin: 0;
+}
+
+.headline {
+    margin-top: 0;
+    font-size: 4.5vw;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+.project {
+    background: #FFFFFFAA;
+    border: gray dotted;
+    margin-bottom: 1rem;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+.project-title {
+    text-align: center;
+    margin-top: 0;
+}
+
+.project-text {
+    padding: 1rem;
 }
