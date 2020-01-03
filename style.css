@@ -1,0 +1,8 @@
+body {
+    background-color: whitesmoke;
+    background-image: url("assets/svg/path.svg");
+    background-size: 120vw auto;
+    background-position-x: -5vw;
+    background-position-y: -5vw;
+    margin: 0;
+}

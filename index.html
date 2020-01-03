@@ -5,152 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        html {
-            font-family: sans-serif;
-        }
-        
-        body {
-            background-color: whitesmoke;
-            background-image: url("assets/svg/path.svg");
-            background-size: 120vw auto;
-            background-position-x: -5vw;
-            background-position-y: -5vw;
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        header,
-        main {
-            padding: 1rem 1rem 0 1rem;
-        }
-        
-        footer {
-            padding: 1rem;
-        }
-        
-        header>h1 {
-            margin: 0;
-            line-height: 1.8rem;
-        }
-
-        .transparent-card {
-            background: #FFFFFFAA;
-            border: gray dotted;
-            margin-bottom: 1rem;
-        }
-        
-
-        .profile {
-            text-align: center;
-            margin-bottom: 1rem;
-            padding: 1rem;
-            box-sizing: border-box;
-            border: 1rem ridge purple;
-        }
-
-        .profile-image {
-            border-radius: 50%;
-            width: 100%;
-        }
-
-        .profile-text {
-            font-size: 1.2rem;
-        }
-
-        .project {
-            padding: 0rem;
-        }
-        
-        .project-image {
-            width: 100%;
-            height: auto;
-        }
-        
-        .project-title {
-            margin-top: 0;
-        }
-        
-        .project-text {
-            padding: 1rem;
-        }
-        
-        footer {
-            background: #FFFFFFAA;
-            color: gray;
-            text-align: center;
-            margin-top: auto;
-        }
-        
-        @media only screen and (min-width: 500px) and (min-height: 600px) {
-            header {
-                height: 0;
-                padding: 0;
-                margin: 0;
-            }
-            header>h1 {
-                line-height: unset;
-                margin: unset;
-                position: absolute;
-                bottom: 0rem;
-                right: 0;
-                font-size: 14vw;
-                z-index: -1;
-            }
-
-            main {
-                margin: 0;
-                box-sizing: border-box;
-                height: 100vh;
-                display: flex;
-                align-items: flex-start;
-                flex-wrap: nowrap;
-                overflow-x: auto;
-            }
-
-            .transparent-card {
-                flex: 0 0 auto;
-                margin: 1rem;
-            }
-        
-
-            .profile {
-                width: 22rem;
-            }
-
-            .profile-image {
-                width: 100%;
-            }
-
-            .profile-text {
-                margin: 0;
-                margin-left: 1rem;
-            }
-
-            .project {
-                width: 18rem;
-            }
-
-            footer {
-                display: none;
-            }
-        }
-    </style>
+    <title>Chris Smith</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>CHRIS SMITH</h1>
+        <img class="portrait" src="assets/png/self-portrait-square.png" alt="Pencil drawing on lined paper of myself looking crazy.">
+        <h1 class="my-name">CHRIS SMITH</h1>
+        <p class="headline">developer / musician / neat person</p>
     </header>
     <main>
-        <div class="profile transparent-card">
-            <p class="profile-text">Hi! I'm Chris, and this is roughly what I look like!</p>
-            <img class="profile-image" src="assets/png/self-portrait-square.png" alt="Pencil drawing on lined paper of myself looking crazy.">
-            <p class="profile-text">Please take a moment to peruse these websites I've lovingly crafted!</p>
-        </div>
         <div class="project transparent-card">
             <img class="project-image" src="assets/gif/melo-type.gif" alt="animated gif of melo-type website">
             <div class="project-text">
@@ -183,9 +48,7 @@
         </div>
     </main>
     <footer>
-        <div class="signature">
-            Made by Chris Smith
-        </div>
+        <p>the end.</p>
     </footer>
 </body>
 
