@@ -56,8 +56,12 @@ main {
     color: black;
 }
 
+.project:hover {
+    border-color: deeppink;
+}
+
 .project-title a:hover {
-    border-bottom: solid;
+    border-bottom: solid deeppink;
 }
 
 .project-text {
