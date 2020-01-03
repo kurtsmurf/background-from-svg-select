@@ -14,8 +14,8 @@ header {
 
 .portrait {
     border-radius: 50%;
-    width: 80vw;
-    margin-top: 9vw;
+    width: 70vw;
+    margin-top: 10vw;
     margin-bottom: 2vw;
 }
 
@@ -49,6 +49,15 @@ main {
 .project-title {
     text-align: center;
     margin-top: 0;
+}
+
+.project-title a{
+    text-decoration: none;
+    color: black;
+}
+
+.project-title a:hover {
+    border-bottom: solid;
 }
 
 .project-text {
