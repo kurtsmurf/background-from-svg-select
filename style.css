@@ -20,14 +20,33 @@ header {
 }
 
 .my-name {
-    font-size: 12.25vw;
+    font-size: 13.47vw;
+    line-height: 12vw;
     margin: 0;
 }
 
 .headline {
     margin-top: 0;
+    margin-bottom: .2rem;
     font-size: 4.5vw;
     font-weight: lighter;
+}
+
+.links {
+    font-size: 5vw;
+    display: flex;
+    justify-content: space-between;
+    width: 86vw;
+    margin: 0 auto 2rem auto;
+    padding: 0 .25rem;
+}
+
+.links>a {
+    color: deeppink;
+}
+
+.links>a:hover {
+    color: rgb(194, 13, 110);
 }
 
 .headline>span::after {
@@ -75,7 +94,7 @@ main {
     padding: 1rem;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 870px) {
     body {
         display: flex;
         padding: 2rem;
@@ -137,6 +156,13 @@ main {
 
     .headline>span::after {
         content: " "
+    }
+
+    .links {
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 1.27rem;
+        padding: 0 .25rem;
     }
 
     main {
