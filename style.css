@@ -36,7 +36,7 @@ main {
 }
 
 .project {
-    background: #FFFFFFAA;
+    background: rgba(255, 255, 255, 0.667);
     border: gray dotted;
     margin-bottom: 1rem;
 }
@@ -84,9 +84,13 @@ main {
     }
 
     .header-text {
-        writing-mode: vertical-lr;
-        text-orientation: mixed;
+        -webkit-writing-mode: vertical-lr;
+            -ms-writing-mode: tb-lr;
+                writing-mode: vertical-lr;
+        -webkit-text-orientation: mixed;
+                text-orientation: mixed;
         text-align: right;
+
     }
 
     .my-name {
