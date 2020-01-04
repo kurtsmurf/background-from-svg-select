@@ -28,7 +28,14 @@ header {
     margin-top: 0;
     font-size: 4.5vw;
     font-weight: lighter;
-    text-transform: uppercase;
+}
+
+.headline>span::after {
+    content: " / "
+}
+
+.headline>span:last-child::after {
+    content: ""
 }
 
 main {
@@ -75,7 +82,8 @@ main {
     }
 
     header {
-        width: 12rem;
+        /* width: 12rem; */
+        max-width: 22rem;
     }
 
     .portrait {
@@ -84,18 +92,20 @@ main {
     }
 
     .header-text {
-        -webkit-writing-mode: vertical-lr;
+        /* -webkit-writing-mode: vertical-lr;
             -ms-writing-mode: tb-lr;
                 writing-mode: vertical-lr;
         -webkit-text-orientation: mixed;
                 text-orientation: mixed;
-        text-align: right;
+        text-align: right; */
+        /* transform: rotate(90deg) */
 
     }
 
     .my-name {
         display: inline;
         font-size: 7rem;
+        line-height: 6.7rem;
     }
 
     .headline {
@@ -103,6 +113,30 @@ main {
         text-align: right;
         font-size: 2rem;
         width: 100%;
+    }
+
+    .headline>span {
+        display: block;
+        text-align: center;
+    }
+
+    .headline>span:nth-child(1) {
+        font-size: 3.7rem;
+        line-height: 3.4rem;
+    }
+
+    .headline>span:nth-child(2) {
+        font-size: 4.43rem;
+        line-height: 4.2rem;
+    }
+
+    .headline>span:nth-child(3) {
+        font-size: 3.17rem;
+        line-height: 2.9rem
+    }
+
+    .headline>span::after {
+        content: " "
     }
 
     main {
