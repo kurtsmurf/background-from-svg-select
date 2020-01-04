@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
 body {
     background-color: whitesmoke;
     background-image: url("assets/svg/path.svg");
@@ -10,6 +12,7 @@ body {
 
 header {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .portrait {
@@ -20,7 +23,7 @@ header {
 }
 
 .my-name {
-    font-size: 13.47vw;
+    font-size: 14vw;
     line-height: 12vw;
     margin: 0;
 }
@@ -28,17 +31,16 @@ header {
 .headline {
     margin-top: 0;
     margin-bottom: .2rem;
-    font-size: 4.5vw;
+    font-size: 4.7vw;
     font-weight: lighter;
 }
 
 .links {
-    font-size: 5vw;
+    font-size: 5.64vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 86vw;
     margin: 0 auto 2rem auto;
-    padding: 0 .25rem;
 }
 
 .links>a {
@@ -122,9 +124,8 @@ main {
     }
 
     .my-name {
-        display: inline;
-        font-size: 7rem;
-        line-height: 6.7rem;
+        font-size: 6.5rem;
+        line-height: 6.2rem;
     }
 
     .headline {
@@ -145,12 +146,12 @@ main {
     }
 
     .headline>span:nth-child(2) {
-        font-size: 4.43rem;
+        font-size: 4.3rem;
         line-height: 4.2rem;
     }
 
     .headline>span:nth-child(3) {
-        font-size: 3.17rem;
+        font-size: 3.05rem;
         line-height: 2.9rem
     }
 
