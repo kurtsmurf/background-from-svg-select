@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
-
 body {
     background-color: whitesmoke;
-    background-image: url("assets/svg/path.svg");
+    background-image: url("assets/svg/path_alt.svg");
     background-size: 120vw auto;
     background-position-x: -5vw;
     background-position-y: -5vw;
@@ -101,17 +100,14 @@ main {
         display: flex;
         padding: 2rem;
     }
-
     header {
         /* width: 12rem; */
         max-width: 22rem;
     }
-
     .portrait {
         width: 100%;
         margin: 0;
     }
-
     .header-text {
         /* -webkit-writing-mode: vertical-lr;
             -ms-writing-mode: tb-lr;
@@ -120,59 +116,48 @@ main {
                 text-orientation: mixed;
         text-align: right; */
         /* transform: rotate(90deg) */
-
     }
-
     .my-name {
         font-size: 6.5rem;
         line-height: 6.2rem;
     }
-
     .headline {
         margin: 0;
         text-align: right;
         font-size: 2rem;
         width: 100%;
     }
-
     .headline>span {
         display: block;
         text-align: center;
     }
-
     .headline>span:nth-child(1) {
         font-size: 3.7rem;
         line-height: 3.4rem;
     }
-
     .headline>span:nth-child(2) {
         font-size: 4.3rem;
         line-height: 4.2rem;
     }
-
     .headline>span:nth-child(3) {
         font-size: 3.05rem;
         line-height: 2.9rem
     }
-
     .headline>span::after {
         content: " "
     }
-
     .links {
         box-sizing: border-box;
         width: 100%;
         font-size: 1.27rem;
         padding: 0 .25rem;
     }
-
     main {
         margin-left: 2rem;
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
     }
-
     .project {
         margin-right: 1rem;
         width: 20rem;
