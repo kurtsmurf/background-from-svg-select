@@ -1,91 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Chris Smith</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header-text">
-            <h1 class="my-name">CHRIS SMITH</h1>
-            <p class="headline">
-                <span>DEVELOPER</span>
-                <span>MUSICIAN</span>
-                <span>NICE PERSON</span>
-            </p>
-        </div>
-        <p class="links">
-            <a href="https://github.com/kurtsmurf/">GITHUB</a>&nbsp;&nbsp;
-            <a href="https://soundcloud.com/crsmth">SOUNDCLOUD</a>&nbsp;&nbsp;
-            <a href="https://www.linkedin.com/in/christopher-smith-81a7bb131/">LINKEDIN</a>
-        </p>
+      <div>
+        <h1>Chris Smith</h1>
+        <p>Developer / Musician / Nice Person</p>
+      </div>
+      <ul class="links">
+        <li><a href="https://github.com/kurtsmurf/">github</a></li>
+        <li><a href="https://soundcloud.com/crsmth">soundcloud</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/christopher-smith-81a7bb131/"
+            >linkedin</a
+          >
+        </li>
+      </ul>
     </header>
-    <main>
-        <div class="project">
-            <a href="https://kurtsmurf.github.io/pretty-analyser/">
-                <img class="project-image" src="assets/gif/pretty-analyser.gif"
-                    alt="animated gif of pretty-analyser website">
-            </a>
-            <div class="project-text">
-                <h2 class="project-title">
-                    <a href="https://kurtsmurf.github.io/pretty-analyser/">pretty-analyser</a>
-                </h2>
-                <p>I while back I thought, "what if I used the webAudio API to sample the frequency spectrum of a sound
-                    wave at regular intervals, and then stacked the results back to back?" I bet I could get a pretty
-                    cool, 3d-terrain-like effect! And why not use the device microphone as the sound source while I'm at
-                    it? The result was pretty-analyser. As a side benefit, it gave me an excuse to finally dive in and
-                    get my hands dirty with the HTML canvas element. Good stuff.
-                </p>
-            </div>
-        </div>
-        <div class="project">
-            <a href="https://kurtsmurf.github.io/melo-type/">
-                <img class="project-image" src="assets/gif/melo-type.gif" alt="animated gif of melo-type website">
-            </a>
-            <div class="project-text">
-                <h2 class="project-title">
-                    <a href="https://kurtsmurf.github.io/melo-type/">melo-type</a>
-                </h2>
-                <p>Melo-type is a text-based, melodic step sequencer built on the Web Audio API. Within the app, each
-                    key is assigned a musical note value based on its keyboard position. You can audition a melody by
-                    typing in the main text area, then hit the 'start' button to hear it played back in a loop. You can
-                    also hit the 'demo' button to load an example from a bank of sample melodies.</p>
-            </div>
-        </div>
-        <div class="project">
-            <a href="https://kurtsmurf.github.io/bertz_by_kurt/">
-                <img class="project-image" src="assets/gif/bertz-by-kurt.gif" alt="animated gif of melo-type website">
-            </a>
-            <div class="project-text">
-                <h2 class="project-title">
-                    <a href="https://kurtsmurf.github.io/bertz_by_kurt/">bertz_by_kurt</a>
-                </h2>
-                <p>"Bertz by Kurt" is... an art project? Basically, I took one of my favorite loops, dropped it into an
-                    audioBuffer and built a visually interesting UI around it where I could adjust the audio playback
-                    rate. I like to listen to it on super-low speed while I work.</p>
-            </div>
-        </div>
-        <div class="project">
-            <a href="https://kurtsmurf.github.io/qwerbord/">
-                <img class="project-image" src="assets/gif/qwerbord.gif" alt="animated gif of qwerbord website">
-            </a>
-            <div class="project-text">
-                <h2 class="project-title">
-                    <a href="https://kurtsmurf.github.io/qwerbord/">qwerbord</a>
-                </h2>
-                <p>Qwerbord is a browser based polyphonic synthesizer with an intuitive keyboard interface (hopefully).
-                    I wanted a musical typing tool that didn't try to mimic the white and black keys of a piano, so I
-                    designed the key layout such that playing a given shape anywhere on the keyboard will always produce
-                    the same musical interval. For example, if you press one key, and then press its neighbor one row up
-                    and to the right, you will always produce a major third.</p>
-            </div>
-        </div>
-    </main>
-</body>
-
+    <!-- todo: add "skwee", add "clips" -->
+    <article class="project">
+      <!-- todo: 2 links (github and live) add description -->
+      <!-- <a href="https://kurtsmurf.github.io/pretty-analyser/"> -->
+      <img
+        class="project-image"
+        src="assets/gif/pretty-analyser.gif"
+        alt="A looped screen recording a colorful audio visualization"
+      />
+      <div class="project-text">
+        <h2 class="project-title">
+          <a href="https://kurtsmurf.github.io/pretty-analyser/"
+            >pretty-analyser</a
+          >
+        </h2>
+        <p></p>
+      </div>
+    </article>
+    <article class="project">
+      <!-- todo: 2 links (github and live) revise description -->
+      <!-- <a href="https://kurtsmurf.github.io/melo-type/"> -->
+      <img
+        class="project-image"
+        src="assets/gif/melo-type.gif"
+        alt="A looped screen recording of a musical sequencer playing a sequence of notes"
+      />
+      <div class="project-text">
+        <h2 class="project-title">
+          <a href="https://kurtsmurf.github.io/melo-type/">melo-type</a>
+        </h2>
+        <p>
+          Melo-type is a text-based, melodic step sequencer built on the Web
+          Audio API. Within the app, each key is assigned a musical note value
+          based on its keyboard position. You can audition a melody by typing in
+          the main text area, then hit the 'start' button to hear it played back
+          in a loop. You can also hit the 'demo' button to load an example from
+          a bank of sample melodies.
+        </p>
+      </div>
+    </article>
+    <!-- todo: add footer -->
+  </body>
 </html>
