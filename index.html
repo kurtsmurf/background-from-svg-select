@@ -12,7 +12,7 @@
     <header>
       <div>
         <h1>Chris Smith</h1>
-        <p>Developer / Musician / Nice Person</p>
+        <p>Developer / Musician / <span>Nice Person</span></p>
       </div>
       <ul class="links">
         <li><a href="https://github.com/kurtsmurf/">github</a></li>
@@ -24,7 +24,30 @@
         </li>
       </ul>
     </header>
-    <!-- todo: add "skwee", add "clips" -->
+    <article class="project">
+      <!-- todo: 2 links (github and live) add description -->
+      <!-- <a href="https://kurtsmurf.github.io/pretty-analyser/"> -->
+      <img
+        src="assets/gif/clips.gif"
+        alt="A looped screen recording a colorful audio visualization"
+      />
+      <figcaption>
+        <h2 class="project-title">clips</h2>
+        <p></p>
+      </figcaption>
+    </article>
+    <article class="project">
+      <!-- todo: 2 links (github and live) add description -->
+      <!-- <a href="https://kurtsmurf.github.io/pretty-analyser/"> -->
+      <img
+        src="assets/gif/skwee.gif"
+        alt="A looped screen recording a colorful audio visualization"
+      />
+      <figcaption>
+        <h2 class="project-title">skwee</h2>
+        <p></p>
+      </figcaption>
+    </article>
     <article class="project">
       <!-- todo: 2 links (github and live) add description -->
       <!-- <a href="https://kurtsmurf.github.io/pretty-analyser/"> -->
@@ -33,14 +56,10 @@
         src="assets/gif/pretty-analyser.gif"
         alt="A looped screen recording a colorful audio visualization"
       />
-      <div class="project-text">
-        <h2 class="project-title">
-          <a href="https://kurtsmurf.github.io/pretty-analyser/"
-            >pretty-analyser</a
-          >
-        </h2>
+      <figcaption>
+        <h2 class="project-title">pretty-analyser</h2>
         <p></p>
-      </div>
+      </figcaption>
     </article>
     <article class="project">
       <!-- todo: 2 links (github and live) revise description -->
@@ -50,10 +69,12 @@
         src="assets/gif/melo-type.gif"
         alt="A looped screen recording of a musical sequencer playing a sequence of notes"
       />
-      <div class="project-text">
-        <h2 class="project-title">
-          <a href="https://kurtsmurf.github.io/melo-type/">melo-type</a>
-        </h2>
+      <figcaption>
+        <div>
+          <h2 class="project-title">melo-type</h2>
+          <a href="">code</a>
+          <a href="">live</a>
+        </div>
         <p>
           Melo-type is a text-based, melodic step sequencer built on the Web
           Audio API. Within the app, each key is assigned a musical note value
@@ -62,7 +83,7 @@
           in a loop. You can also hit the 'demo' button to load an example from
           a bank of sample melodies.
         </p>
-      </div>
+      </figcaption>
     </article>
     <!-- todo: add footer -->
   </body>
