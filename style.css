@@ -40,8 +40,11 @@ a:hover {
 article img {
   width: 100%;
 }
+article {
+  font-size: 1.5rem;
+}
 figcaption {
-  padding: 0.5rem;
+  padding: 1rem;
   display: grid;
   gap: 0.5rem;
 }
