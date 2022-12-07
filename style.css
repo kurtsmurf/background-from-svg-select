@@ -15,7 +15,7 @@ ul {
   padding: 0;
 }
 body {
-  columns: auto 400px;
+  columns: 400px;
   max-width: 1500px;
   margin: auto;
   padding: 2rem;
@@ -30,7 +30,6 @@ body > * {
   border: 5px solid;
   box-shadow: 8px 8px 1px #3333;
   height: min-content;
-
 }
 a {
   color: inherit;
@@ -59,4 +58,9 @@ header span {
 }
 h2 {
   text-decoration: dashed;
+}
+footer {
+  padding: 1rem;
+  text-align: center;
+  border-style: dashed;
 }
