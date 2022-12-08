@@ -21,15 +21,12 @@ body {
   padding: 2rem;
   column-gap: 2rem;
 }
-body > *:not(:last-child) {
-  margin-bottom: 2rem;
-}
 body > * {
+  margin-bottom: 2rem;
   break-inside: avoid;
   background: white;
   border: 5px solid;
   box-shadow: 8px 8px 1px #3333;
-  height: min-content;
 }
 a {
   color: inherit;
@@ -53,14 +50,10 @@ header {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background: #fff;
   padding: 1rem;
 }
 header span {
   white-space: nowrap;
-}
-h2 {
-  text-decoration: dashed;
 }
 footer {
   padding: 1rem;
